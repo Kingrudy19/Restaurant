@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function Confirm(){
+      alert("Order Placed Successfully")
+    }
+  </script>
+</head>
+<body>
+  <div class="container-fluid text-center" id="header">
+    <h1>Street Food</h1>
+  </div>
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">Street Food</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="cuisines.html">Cuisine<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="bombay.html">Bombay</a></li>
+          <li><a href="south.html">South</a></li>
+          <li><a href="kerala.html">Kerala</a></li>
+        </ul>
+      </li>
+      <li><a href="ordernow.html">Order Now</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="container">
+  <form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text"></div>
+    <br>
+    </div>
+  <div class="mb-3">
+    <div class="form-group">
+      <label>Choose your Option</label>
+  <select class="form-control" aria-label="Default select example">
+  <option selected>Select Option</option>
+  <option value="1">Bombay</option>
+  <option value="2">South</option>
+  <option value="3">Kerala</option>
+</select>
+</div>  
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+  </div>
+  <button type="submit" class="btn btn-primary" onclick="Confirm()">Order Now</button>
+</form>
+</div>
+</body>
+</html>
